@@ -345,13 +345,13 @@ textarea.input{resize:vertical;min-height:90px}
 <div class="auth" id="auth" hidden>
 <div class="auth-card">
 <h1 id="auth-title">공동집필실</h1>
-<p class="lead" id="auth-sub">로그인하면 대화·게시판·논문 진행 보드가 열립니다.</p>
+<p class="lead" id="auth-sub">가입 신청 후 관리자가 승인하면 이용할 수 있습니다.</p>
 <div class="auth-tabs"><button class="active" data-mode="login" id="tab-login">로그인</button><button data-mode="signup" id="tab-signup">회원가입</button></div>
 <form id="auth-form">
 <div class="field"><label>아이디 (또는 이메일)</label><input class="input" id="au-id" autocomplete="username" required placeholder="영문·숫자 3자 이상"></div>
 <div class="field"><label>비밀번호</label><input class="input" type="password" id="au-pw" autocomplete="current-password" required minlength="6" placeholder="6자 이상"></div>
 <div class="field" id="au-name-wrap" hidden><label>표시 이름</label><input class="input" id="au-name" maxlength="20" placeholder="박진우 / ○○○ 교수"></div>
-<div class="field" id="au-code-wrap" hidden><label>가입 코드</label><input class="input" id="au-code" placeholder="초대한 사람에게 받은 코드"></div>
+<input type="hidden" id="au-code" value=""><div id="au-code-wrap" hidden></div>
 <div class="auth-err" id="auth-err" hidden></div>
 <button type="submit" class="btn primary" id="auth-go" style="justify-content:center;padding:10px">로그인</button>
 </form>
